@@ -1,0 +1,16 @@
+# Não está funcionando #
+N, M = input().split(" ")
+N, M = int(N), int(M)
+cfo = input().split(" ")
+for x in range(N): cfo[x] = int(cfo[x])
+cfs = input().split(" ")
+for x in range(M): cfs[x] = int(cfs[x])
+cfi = []
+cfp = []
+for x in cfs:
+  for y in range(x):
+     cfi.append(cfo[y])
+print(cfi)
+for x in range(10):
+  cfp.append(cfi.count(x))
+print(cfp)
